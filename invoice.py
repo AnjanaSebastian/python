@@ -1,14 +1,3 @@
-def generate_invoice(client, total, items, date):
-    invoice = "Invoice for {}\n".format(client)
-    invoice += "Date: {}\n".format(date)
-    invoice += "Items:\n"
-    for item in items:
-        invoice += "- {}: ${}\n".format(item[0], item[1])
-    invoice += "Total: ${}\n".format(total)
-    return invoice
-
-inv = generate_invoice("Milan Mathew", 4230, [("Item 1", 30), ("Item 2", 200), ("Item 3", 4000)], "2023-02-17")
-print(inv)
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.pdfgen import canvas 
