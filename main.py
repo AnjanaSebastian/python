@@ -1,4 +1,4 @@
-from class import Student
+from class1 import Student
 
 student = Student(
     name="Anjana Sebastian",
